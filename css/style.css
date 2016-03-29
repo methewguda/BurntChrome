@@ -1,0 +1,54 @@
+.loginBody{
+    width: 320px;
+    height:480px;
+    margin: 100px auto 0px;
+}
+
+header,
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+.headerText{
+    font-size: 14px;
+}
+
+hr{
+    width: 80%;
+}
+
+.content{
+    margin: 0px 15px 15px 15px;
+}
+
+.lists{
+    padding: 0px;
+}
+
+#teacherList,
+#studentList{
+  padding: 0px;
+}
+.frame-container{
+    width: 73%;
+}
+
+.web-content{
+    width: 100%;
+    height: 700px;
+}
+
+td, tr{
+    border: 1px solid black;
+}
+
+#navbar {
+    padding-top: 20px;
+    display: flex !important;
+
+}
+
+ .inputURL {
+    height: 47px;
+ }

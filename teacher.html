@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burnt Chrome</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="library/jQuery.js"></script>
+    <script type="text/javascript" src="scripts/utl.js"></script>
+</head>
+<body class="listBody">
+<div class="col-md-3">
+    <header>
+        <h1>Burnt Chrome</h1>
+        <hr>
+        <div class="row">
+            <div class="col-xs-9">
+                <p class="headerText">Whitelist:</p>
+            </div>
+            <div class="col-xs-3">
+                <input type="submit" class="btn btn-success" id="logoutButton" value="Logout" required>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="lists">
+            <ul id="teacherList"></ul>
+        </div>
+        <form name="sendlist" id="sendlist">
+            <div class="form-group">
+                <label for="addList">Add a new list:</label>
+                <input type="text" class="form-control" id="addList" name="addList"
+                       placeholder="Enter new url here">
+            </div>
+            <input type="submit" class="btn btn-success" id="addListButton" value="Add to list">
+            <button type="submit" class="btn btn-danger" id="delListButton">Delete List</button>
+        </form>
+    </div>
+
+    <footer>
+        Copyright &copy; 2016 by SMUSH.<br>
+        <span>Developed by Team White</span>
+    </footer>
+</div>
+    <div class="col-md-9 frame-container">
+        <div class ="navbar" style="display:flex; padding: 0px; margin:0px">
+            <input type="button" class="submitURL btn" id="submitPrev" value="prev">
+            <input type="button" class="submitURL btn" id="submitFwd" value="fwd">
+            <input type="text" class="inputURL form-control" id="inputURL2" value="" placeholder="Address Bar">
+            <input type="button" class="submitURL btn btn-success" id="submitURL2" value="GO">
+        </div>
+        <iframe class="web-content" id="webFrame" name="webFrame" src="">
+        </iframe>
+    </div>
+<script type="text/javascript" src="scripts/data.js"></script>
+</body>
+</html>
+

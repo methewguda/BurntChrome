@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "author":"Team White",
+
+  "name": "Burnt Chrome",
+  "description": "This extension will only allow white-list pages to be browse",
+  "version": "0.1",
+
+  "icons": {
+    "128": "images/icon.png"
+  },
+
+  "browser_action": {
+    "default_title": "Burnt Chrome",
+    "default_popup": "popup.html"
+  },
+
+  "chrome_url_overrides" : {
+    "newtab": "popup.html"
+  },
+
+  "background": {
+    "scripts": [
+      "background.js",
+      "scripts/utl.js",
+      "scripts/auth.js",
+      "scripts/data.js"
+    ]
+  },
+
+  "web_accessible_resources": [
+      "denied.html"
+  ],
+
+  "permissions": [
+    "tabs","http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "webNavigation", "downloads"
+  ]
+}
